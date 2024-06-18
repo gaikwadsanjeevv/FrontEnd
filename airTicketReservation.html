@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .form-group select,
+        .form-group input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .submit-btn {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Flight Booking Form</h2>
+    <form>
+        <div class="form-group">
+            <label for="departureAirport">Departure Airport:</label>
+            <select id="departureAirport" name="departureAirport" required>
+                <option value="">Select Departure Airport</option>
+                <!-- Replace with actual airport codes and names -->
+                <option value="JFK">John F. Kennedy International Airport (JFK)</option>
+                <option value="LAX">Los Angeles International Airport (LAX)</option>
+                <option value="LHR">London Heathrow Airport (LHR)</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="destinationAirport">Destination Airport:</label>
+            <select id="destinationAirport" name="destinationAirport" required>
+                <option value="">Select Destination Airport</option>
+                <!-- Replace with actual airport codes and names -->
+                <option value="CDG">Charles de Gaulle Airport (CDG)</option>
+                <option value="SYD">Sydney Airport (SYD)</option>
+                <option value="NRT">Narita International Airport (NRT)</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="departureDate">Departure Date:</label>
+            <input type="text" id="departureDate" name="departureDate" placeholder="Select Departure Date" required>
+        </div>
+        <div class="form-group">
+            <label for="arrivalDate">Return Date:</label>
+            <input type="text" id="arrivalDate" name="arrivalDate" placeholder="Select Return Date" required>
+        </div>
+        <button type="submit" class="submit-btn">Book Flight</button>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+    flatpickr('#departureDate', {
+        enableTime: false,
+        dateFormat: "Y-m-d",
+    });
+    flatpickr('#arrivalDate', {
+        enableTime: false,
+        dateFormat: "Y-m-d",
+    });
+</script>
+
+</body>
+</html>
