@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservation Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .form-group select,
+        .form-group input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .submit-btn {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Hotel Reservation Form</h2>
+    <form>
+        <div class="form-group">
+            <label for="hotel">Select Hotel:</label>
+            <select id="hotel" name="hotel" required>
+                <option value="">Select a Hotel</option>
+                <option value="The Ritz-Carlton New York, Central Park">The Ritz-Carlton New York, Central Park</option>
+                <option value="Four Seasons Resort Maui at Wailea">Four Seasons Resort Maui at Wailea</option>
+                <option value="The Peninsula Beverly Hills">The Peninsula Beverly Hills</option>
+                <option value="The Langham, Chicago">The Langham, Chicago</option>
+                <option value="Wynn Las Vegas">Wynn Las Vegas</option>
+                <option value="The St. Regis New York">The St. Regis New York</option>
+                <option value="The Lodge at Sea Island">The Lodge at Sea Island</option>
+                <option value="Montage Kapalua Bay">Montage Kapalua Bay</option>
+                <option value="The Jefferson, Washington DC">The Jefferson, Washington DC</option>
+                <option value="The Little Nell">The Little Nell</option>
+                <option value="The Peninsula Chicago">The Peninsula Chicago</option>
+                <option value="The Canyon Suites at The Phoenician, A Luxury Collection Resort, Scottsdale">The Canyon Suites at The Phoenician, Scottsdale</option>
+                <option value="Four Seasons Hotel Seattle">Four Seasons Hotel Seattle</option>
+                <option value="The Inn & Club at Harbour Town">The Inn & Club at Harbour Town</option>
+                <option value="Four Seasons Hotel Washington, DC">Four Seasons Hotel Washington, DC</option>
+                <option value="Mandarin Oriental, Miami">Mandarin Oriental, Miami</option>
+                <option value="The Peninsula New York">The Peninsula New York</option>
+                <option value="The St. Regis Bal Harbour Resort">The St. Regis Bal Harbour Resort</option>
+                <option value="The Ritz-Carlton, Lake Tahoe">The Ritz-Carlton, Lake Tahoe</option>
+                <option value="The Plaza Hotel New York">The Plaza Hotel New York</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="checkInDate">Check-In Date:</label>
+            <input type="date" id="checkInDate" name="checkInDate" required>
+        </div>
+        <div class="form-group">
+            <label for="checkOutDate">Check-Out Date:</label>
+            <input type="date" id="checkOutDate" name="checkOutDate" required>
+        </div>
+        <button type="submit" class="submit-btn">Book Hotel</button>
+    </form>
+</div>
+
+</body>
+</html>
