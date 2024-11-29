@@ -36,7 +36,7 @@ export default Footer
 // Go to App.jsx and put footer and import it
 //The whole code looks as follow : 
 >
->'''React
+>
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
 
@@ -47,14 +47,13 @@ function App() {
 <Footer/>
 </>
  );
-}'''
+}
 //Here we get 2 component which is generally not allowed so i put empty angle bracket <></> called as fragments
 fragments
-//now making few more changes to Footer code you can enter javascript code in {}  in teturn statement trying to reflect 
+//now making few more changes to Footer code you can enter javascript code in {}  in return statement, but require outside return statement, trying to reflect 
 //the current year automatically rel=flecting on website as: 
 
 > 
-'''React
 function Footer() {
 return (
 
@@ -64,5 +63,28 @@ return (
 )
     
 }
-export default Footer'''
+export default Footer
+----------------------------------
 
+Now lets make new component  Food. b y right click source
+
+
+function Food() {
+
+const food1 = "orange";
+const food2 = "Banana";
+    
+return(                     //values declared outside return dont require { }
+<ul>
+    <li>Apple</li>
+    <li></li>
+    <li></li>
+</ul>
+
+
+);
+}
+export default Food
+
+//Now got to App.jsx and import food
+> 
