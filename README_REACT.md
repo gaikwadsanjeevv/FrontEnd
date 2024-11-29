@@ -35,7 +35,9 @@ export default Footer
 
 // Go to App.jsx and put footer and import it
 //The whole code looks as follow : 
->import Header from './Header.jsx'
+>
+>'''React
+import Header from './Header.jsx'
 import Footer from './Footer.jsx'
 
 function App() {
@@ -45,14 +47,14 @@ function App() {
 <Footer/>
 </>
  );
-}
+}'''
 //Here we get 2 component which is generally not allowed so i put empty angle bracket <></> called as fragments
 fragments
 //now making few more changes to Footer code you can enter javascript code in {}  in teturn statement trying to reflect 
 //the current year automatically rel=flecting on website as: 
 
 > 
-
+'''React
 function Footer() {
 return (
 
@@ -62,5 +64,5 @@ return (
 )
     
 }
-export default Footer
+export default Footer'''
 
